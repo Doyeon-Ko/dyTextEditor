@@ -48,6 +48,16 @@ Initially inspired by the core behavior of editors like vim, this project aims t
 
 🛠 The command handling logic is central to user interaction in the CLI version. It will be expanded in GUI version logic later.
 
+---
+### ✅ Text Editing
+
+
+  - appendLine()
+
+    - Appends a new line to the end of the text buffer stored in the editor
+    - Handles memory allocation and checks if capacity to be expanded
+
+
   ### ⏩ Next Steps (will be continuously updated)
   - Implement insert/edit/delete line functionality
   - save changes to disk
