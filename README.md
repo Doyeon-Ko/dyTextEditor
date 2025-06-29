@@ -30,6 +30,23 @@ Initially inspired by the core behavior of editors like vim, this project aims t
 
     - Initializes editor configuration values
     - Resets cursor position, row count, and screen size, and etc.
+   
+  - getCommand()
+
+    - captures user input (arrow keys, editing commands, and line numbers) and parses in into a COMMAND struct.
+   
+      - Line Navigation
+          - Arrow Keys: ↑ (Up), ↓ (Down)
+          - Page Navigation: PgUp, PgDn
+          - Line Number input
+      - Editing Commands
+          - A: Append a new line
+          - I: Insert a line
+          - D: Delete a line
+          - E: Edit a line
+          - Q: Quit editor (case-insensitive)
+
+🛠 The command handling logic is central to user interaction in the CLI version. It will be expanded in GUI version logic later.
 
   ### ⏩ Next Steps (will be continuously updated)
   - Implement insert/edit/delete line functionality
