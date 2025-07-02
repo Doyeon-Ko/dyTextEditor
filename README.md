@@ -49,6 +49,8 @@ Initially inspired by the core behavior of editors like vim, this project aims t
 🛠 The command handling logic is central to user interaction in the CLI version. It will be expanded in GUI version logic later.
 
 ---
+
+
 ### ✅ Text Editing
 
 
@@ -56,6 +58,17 @@ Initially inspired by the core behavior of editors like vim, this project aims t
 
     - Appends a new line to the end of the text buffer stored in the editor
     - Handles memory allocation and checks if capacity to be expanded
+
+
+---
+
+
+### ✅ Navigation
+
+
+  - moveLine()
+
+    - Move the cursor to a specific line or navigate up/down by line or page
 
 
   ### ⏩ Next Steps (will be continuously updated)
