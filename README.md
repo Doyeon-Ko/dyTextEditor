@@ -2,7 +2,7 @@
 A command-line based lightweight text editor written in C, focusing on system-level file handling and memory management.
 Initially inspired by the core behavior of editors like vim, this project aims to implement a functional text editing tool from scratch.
 
-## Current Features Implemented (as of 2025. 06)
+## Current Features Implemented (as of 2025. 07)
 
 
 ### ✅ File Handling
@@ -48,6 +48,7 @@ Initially inspired by the core behavior of editors like vim, this project aims t
 
 🛠 The command handling logic is central to user interaction in the CLI version. It will be expanded in GUI version logic later.
 
+
 ---
 
 
@@ -60,6 +61,18 @@ Initially inspired by the core behavior of editors like vim, this project aims t
     - Handles memory allocation and checks if capacity to be expanded
 
 
+  - insertLine()
+
+    -  Insert a new line of text at a specified locataion
+    -  [Default mode] If the user presses 'Enter' without line number input, the new line is inserted after the current line.
+
+
+  - deleteLine()
+
+    - Deletes a specific line from the text file
+    - Backup the deleted line in case the user wants to undo the deletion later
+   
+      
 ---
 
 
@@ -70,6 +83,10 @@ Initially inspired by the core behavior of editors like vim, this project aims t
 
     - Move the cursor to a specific line or navigate up/down by line or page
 
+
+---
+
+  
 
   ### ⏩ Next Steps (will be continuously updated)
   - Implement insert/edit/delete line functionality
